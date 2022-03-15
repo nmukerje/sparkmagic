@@ -49,7 +49,8 @@ class AutoVizWidget(Box):
 
         # Create output area
         self.to_display = self.ipywidget_factory.get_output()
-        self.to_display.width = "800px"
+        #self.to_display.width = "800px"
+        self.to_display.layout =  widgets.Layout(width="1500px")
         self.output = self.ipywidget_factory.get_hbox()
         self.output.children = [self.to_display]
 
